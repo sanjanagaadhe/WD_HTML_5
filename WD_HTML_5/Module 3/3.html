@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            height: 300px;
+            width: 800px;
+            border: 4px solid goldenrod;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <canvas id="myCanvas" width="250" height="150" style="border:0px solid grey"></canvas>
+
+<script>
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.rect(30, 30, 110, 100);
+ctx.stroke();
+</script> 
+
+<canvas id="Canvas" width="250" height="150" style="border:0px solid grey"></canvas>
+
+<script>
+const ca = document.getElementById("Canvas");
+const ct = ca.getContext("2d");
+ct.beginPath();
+ct.arc(100, 75, 50, 0, 2 * Math.PI);
+ct.stroke();
+</script> 
+
+<canvas id="my" width="250" height="150" style="border:0px solid grey"></canvas>
+
+<script>
+const can = document.getElementById("my");
+const cx = can.getContext("2d");
+
+cx.beginPath();
+cx.rect(30, 30, 170, 100);
+cx.stroke();
+</script> 
+</div>
+</body>
+</html>
